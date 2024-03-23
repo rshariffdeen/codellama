@@ -17,8 +17,8 @@ RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
 
 # Copy files
 
-ADD CodeLlama-${MODEL}-Instruct/ ${APP_DIR}
-ADD llama ${APP_DIR}
+ADD CodeLlama-${MODEL}-Instruct/ ${APP_DIR}/CodeLlama-${MODEL}-Instruct
+ADD llama ${APP_DIR}/llama
 ADD requirements.txt ${APP_DIR}
 ADD cerberus.py ${APP_DIR}
 
